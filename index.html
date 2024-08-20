@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Streaming</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Minha Lista</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="https://via.placeholder.com/1200x500" alt="Banner de Filme">
+            <div class="banner-info">
+                <h2>Título do Filme ou Série</h2>
+                <p>Descrição do filme ou série aqui. Uma breve descrição sobre o conteúdo.</p>
+                <button>Assistir</button>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Em Alta</h2>
+            <div class="movie-grid">
+                <div class="movie-item"><img src="https://via.placeholder.com/200x300" alt="Filme 1"></div>
+                <div class="movie-item"><img src="https://via.placeholder.com/200x300" alt="Filme 2"></div>
+                <div class="movie-item"><img src="https://via.placeholder.com/200x300" alt="Filme 3"></div>
+                <div class="movie-item"><img src="https://via.placeholder.com/200x300" alt="Filme 4"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Streaming. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+header {
+    background-color: #141414;
+    padding: 20px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #e50914;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-info h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.banner-info button {
+    background-color: #e50914;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.banner-info button:hover {
+    background-color: #b81d24;
+}
+
+.content {
+    padding: 20px;
+}
+
+.movie-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.movie-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #141414;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
